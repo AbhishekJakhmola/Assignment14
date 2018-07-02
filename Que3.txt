@@ -1,0 +1,6 @@
+import re
+x = "A, very very; irregular_sentence"
+list = re.split("[^a-zA-Z0-9]",x)
+n=len(list)
+for i in range(n):
+    print(list[i],end=' ')
