@@ -1,0 +1,8 @@
+import re
+x = "Good advice! RT @TheNextWeb: What I would do differently if I was learning to code today "
+list = re.split("[A-Z][A-Z0-9]+|\W",x)
+str1 = ' '.join(str(e) for e in list)
+list2 = re.split("[A-Z][a-z0-9]*[A-Z][a-z0-9]*[A-Z][a-z0-9]*",str1)
+n=len(list2)
+for i in range(n):
+    print(list2[i],end =' ')
