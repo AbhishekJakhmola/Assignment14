@@ -1,0 +1,9 @@
+import re
+list2=[]
+x= ("zuck26@facebook.com" ,"page33@google.com" ,"jeff42@amazon.com")
+for a in x:
+    list = re.split('\W',a)
+    tuplex = tuple(list)
+    list2.append(tuplex)
+
+print(list2)
